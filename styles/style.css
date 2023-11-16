@@ -3,7 +3,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 92px 50px;
+   padding: 94px 50px;
 }
 
 .menu {
@@ -75,7 +75,7 @@
    line-height: 1.24;
    letter-spacing: 30px;
    text-transform: uppercase;
-   padding: 168px 50px 120px;
+   padding: 164px 50px 120px;
 }
 
 .accent-span {
@@ -129,7 +129,7 @@
    text-align: center;
    text-transform: uppercase;
    margin-left: 78px;
-   cursor: pointer; 
+   cursor: pointer;
 }
 
 .lots {
@@ -265,7 +265,7 @@
 .footer {
    font-size: 18px;
    font-weight: 400;
-   padding: 0 50px 90px;
+   padding: 0 50px 88px;
    display: flex;
    justify-content: space-between;
 }
