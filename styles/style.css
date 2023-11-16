@@ -272,7 +272,7 @@
 
 .address {
    flex: 0 0 auto;
-   width: 240px;
+   max-width: 240px;
    line-height: 1.35;
    text-underline-position: under;
 }
