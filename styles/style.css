@@ -30,12 +30,15 @@
 
 .header__logo-image {
    display: block;
-   max-width: 133px;
-   height: 104px;
+   width: 148px;
+   height: 105px;
 }
 
 .menu-info {
    list-style: none;
+   font-size: 18px;
+   line-height: 1.35;
+   padding-right: 3px;
 }
 
 .menu-info__link {
