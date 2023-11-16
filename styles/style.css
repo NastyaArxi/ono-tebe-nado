@@ -3,7 +3,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 94px 50px;
+   padding: 92px 50px;
 }
 
 .menu {
@@ -117,7 +117,7 @@
    word-spacing: 18px;
 }
 
-.cover__description-btn {   
+.cover__description-btn {
    display: block;
    background: transparent;
    font-family: Raleway, sans-serif;
@@ -129,7 +129,7 @@
    text-align: center;
    text-transform: uppercase;
    margin-left: 78px;
-   cursor: pointer;   
+   cursor: pointer; 
 }
 
 .lots {
@@ -188,7 +188,7 @@
 
 .card {
    font-family: Raleway, sans-serif;
-   color: #fff;  
+   color: #fff;
    height: inherit;
 }
 
@@ -219,13 +219,10 @@
    font-size: 20px;
    font-weight: 400;
    border-bottom: 1px solid #000;
-}
-
-.lots__look-more-link {
    margin-left: 40px;
 }
 
-.about {   
+.about {
    display: flex;
    gap: 25px;
    padding: 0 50px 180px 50px;
@@ -280,7 +277,7 @@
    text-underline-position: under;
 }
 
-.footer__address-link{
+.footer__address-link {
    border-bottom: 1px solid #000;
 }
 
