@@ -272,9 +272,12 @@
 
 .address {
    flex: 0 0 auto;
-   max-width: 240px;
+   width: 33.3%;
    line-height: 1.35;
-   text-underline-position: under;
+}
+
+.footer__address {
+   padding-right: 15.5%;
 }
 
 .footer__address-link {
@@ -286,11 +289,12 @@
    width: auto;
    display: flex;
    flex-direction: column;
-   text-align: center;
+   
 }
 
 .footer__menu-list {
    list-style: none;
+   text-align: center;
 }
 
 .footer__menu-link {
@@ -306,6 +310,7 @@
    display: flex;
    justify-content: end;
    gap: 48px;
+   width: 33.3%;
    list-style: none;
 }
 
