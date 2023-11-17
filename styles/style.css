@@ -186,10 +186,9 @@
    flex: 1 0 0%;
    min-height: 450px;
    min-width: 430px;
-   
 }
 
-.card {   
+.card {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
