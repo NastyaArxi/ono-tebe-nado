@@ -1,44 +1,62 @@
 
 .header {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
    align-items: center;
-   padding: 94px 49px 94px 51px;
+   padding: 92px 50px 96px;
+}
+
+.nav__bar {
+   flex: 0 0 auto;
+   width: 33.3%;
 }
 
 .menu {
    display: flex;
-   list-style: circle;
-   justify-content: space-between;
-   width: 388px;
+   gap: 32px;
 }
+
 .menu__item {
    font-family: Raleway, sans-serif;
    font-size: 18px;
    font-weight: 400;
-   border-bottom: 1px solid #000;
+   list-style: circle;
 }
 
-.menu__item:first-child {
+.menu__link {
+   text-underline-position: under;
+}
+
+.menu__link_active {
+   text-decoration: none;
+}
+
+.menu__item_no-point {
    list-style: none;
-   border: none;
 }
 
 .header__logo {
-   padding-right: 11%;
-}
-
-.header__logo-image {
-   display: block;
+   flex: 0 0 auto;
    width: 148px;
    height: 105px;
 }
 
-.menu-info {
-   list-style: none;
-   font-size: 18px;
+.header__logo-image {
+   width: inherit;
+   height: inherit;
+}
+
+.address {
+   flex: 0 0 auto;
+   width: 33.3%;
    line-height: 1.35;
-   padding-right: 3px;
+   text-underline-position: under;
+   flex: 0 0 auto;
+}
+
+.header__address {
+   padding-left: 15.5%;
 }
 
 .menu-info__link {
@@ -46,7 +64,6 @@
    font-size: 18px;
    font-weight: 400;
    line-height: 1.35;
-   border-bottom: 1px solid #000;
 }
 
 .menu-info__text {
@@ -57,16 +74,24 @@
 }
 
 .cover {
-   background-image: url(/images/cover.jpg);
+   background-image: url(../images/cover.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
+   position: relative;
+   z-index: 1;
 }
 
 .overlay {
-   background-color: rgba(0, 0, 0, 0.6);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
    width: 100%;
-   height: inherit;
+   height: 100%;   
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: -1; 
 }
 
 .cover-title {
@@ -86,11 +111,14 @@
 
 .text-center {
    text-align: center;
-   padding-right: 30px;
 }
 
 .text-right {
    text-align: right;
+}
+
+.letter-spacing-two {
+   letter-spacing: 0.3em;
 }
 
 .letter-spacing {
@@ -157,49 +185,39 @@
 
 .lots__card-list-item {
    flex: 1 0 0%;
-   max-width: 430px;
-   height: 450px;
+   min-height: 450px;
+   min-width: 430px;
    
 }
 
+.card {   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   font-family: Raleway, sans-serif;
+   color: #fff;
+   height: 100%;   
+   background: no-repeat center center / cover;
+   position: relative;
+   padding: 50px 39px;
+   z-index: 1;
+}
 
 .card_type_film {
-   background-image: url(/images/card-lot-01.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
+   background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-   background-image: url(/images/card-lot-02.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
+   background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-   background-image: url(/images/card-lot-03.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
+   background-image: url(../images/card-lot-03.jpg);
 }
 
 .card-link {
    height: 100%;
    text-decoration: none;
-}
-
-.card {
-   font-family: Raleway, sans-serif;
-   color: #fff;
-   height: 100%;
-}
-
-.card .overlay {
-   padding: 50px 39px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
 }
 
 .card__title {
@@ -222,6 +240,7 @@
    font-size: 20px;
    font-weight: 400;
    border-bottom: 1px solid #000;
+   text-decoration: none;
    margin-left: 40px;
 }
 
@@ -234,7 +253,7 @@
 }
 
 .about__column:last-child {
-   margin-top: 100px;
+   margin-top: 101px;
 }
 
 .about__logo {
@@ -273,18 +292,9 @@
    justify-content: space-between;
 }
 
-.address {
-   flex: 0 0 auto;
-   width: 33.3%;
-   line-height: 1.35;
-}
 
 .footer__address {
    padding-right: 13.5%;
-}
-
-.footer__address-link {
-   border-bottom: 1px solid #000;
 }
 
 .footer__menu {
@@ -300,12 +310,8 @@
    text-align: center;
 }
 
-.footer__menu-link {
-   border-bottom: 1px solid #000;
-}
-
 .footer__menu-link_active {
-   border-bottom: none;
+   text-decoration: none;
 }
 
 .footer__social-list {
